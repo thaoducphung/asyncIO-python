@@ -12,6 +12,9 @@ if __name__ == "__main__":
 	import time 
 	s = time.perf_counter()
 	# asyncio.run(main())
+	# Way to fix problems in the following link:
+	# https://stackoverflow.com/questions/52796630/python3-6-attributeerror-module-asyncio-has-no-attribute-run
+	
 	loop = asyncio.get_event_loop()
 	result = loop.run_until_complete(main())
 
